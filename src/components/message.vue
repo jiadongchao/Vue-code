@@ -38,7 +38,10 @@
                 '</div>' +
                 '</div>';
 
-            $(e.target).find('.card-container').prepend(cardHTML);
+
+
+            $(this.$e).find('.card-container').prepend(cardHTML);
+            console.log(cardHTML);
             // 加载完毕需要重置
             $.pullToRefreshDone('.pull-to-refresh-content');
         }, 2000);
